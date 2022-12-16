@@ -20,6 +20,11 @@ android {
 
     }
 
+    defaultConfig {
+        buildConfigField("String", "API_KEY", "\"DEMO_KEY\"")
+    }
+
+
     buildTypes {
         getByName("release") {
             isMinifyEnabled = true
