@@ -6,7 +6,7 @@ import mahmoud.alim.marsrover.data.remote.dto.Photo
 /**
  * @author Mahmoud Alim on 16/12/2022.
  */
-class RoverPhotosRepoImpl(
+class RoversPhotosRepoImpl(
     private val remote: PhotosDataSrc
 ) : RoversPhotosRepo {
 
