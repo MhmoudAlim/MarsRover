@@ -14,10 +14,18 @@ object AndroidX {
     private const val pagingVersion = "3.1.1"
     const val paging = "androidx.paging:paging-runtime:$pagingVersion"
 
-    private const val lifecycleVersion = "2.5.1"
+    private const val lifecycleVersion = "2.4.1"
     const val viewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
 
     private const val splashScreenVersion = "1.0.0"
     const val splashScreen = "androidx.core:core-splashscreen:$splashScreenVersion"
+
+    private const val navVersion = "2.5.3"
+    const val fragmentNavigation =  "androidx.navigation:navigation-fragment-ktx:$navVersion"
+    const val uiNavigation =  "androidx.navigation:navigation-ui-ktx:$navVersion"
+
+    private const val hiltNavVersion = "1.0.0"
+    const val hiltNavigation =  "androidx.hilt:hilt-navigation-fragment:$hiltNavVersion"
+    const val hiltCompiler = "androidx.hilt:hilt-compiler:$hiltNavVersion"
 
 }

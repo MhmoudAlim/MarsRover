@@ -42,6 +42,10 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
 
     implementation(AndroidX.coreKtx)
@@ -50,6 +54,10 @@ dependencies {
     implementation(AndroidX.viewModelKtx)
     implementation(AndroidX.constraintLayout)
     implementation(AndroidX.paging)
+    implementation(AndroidX.fragmentNavigation)
+    implementation(AndroidX.uiNavigation)
+    implementation(AndroidX.hiltNavigation)
+    kapt(AndroidX.hiltCompiler)
 
     implementation(Kotlin.coroutines)
 
