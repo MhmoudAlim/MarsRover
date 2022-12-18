@@ -4,16 +4,16 @@ package mahmoud.alim.marsrover.data.remote.dto
 import com.squareup.moshi.Json
 
 data class Photo(
-    @Json(name = "camera")
+    @field:Json(name = "camera")
     val camera: Camera,
-    @Json(name = "earth_date")
+    @field:Json(name = "earth_date")
     val earthDate: String,
-    @Json(name = "id")
+    @field:Json(name = "id")
     val id: Int,
-    @Json(name = "img_src")
+    @field:Json(name = "img_src")
     val imgSrc: String,
-    @Json(name = "rover")
+    @field:Json(name = "rover")
     val rover: Rover,
-    @Json(name = "sol")
+    @field:Json(name = "sol")
     val sol: Int
 )
