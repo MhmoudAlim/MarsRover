@@ -1,5 +1,7 @@
 package mahmoud.alim.marsrover.domain.usecase
 
+import androidx.paging.PagingData
+import kotlinx.coroutines.flow.Flow
 import mahmoud.alim.marsrover.data.repo.RoversPhotosRepo
 import mahmoud.alim.marsrover.domain.model.RoverPhoto
 
@@ -8,7 +10,7 @@ import mahmoud.alim.marsrover.domain.model.RoverPhoto
  */
 class GetAllRoverPhotos(private val repo: RoversPhotosRepo) {
 
-    suspend operator fun invoke() : Result<List<RoverPhoto>>{
+    operator fun invoke(): Flow<PagingData<RoverPhoto>> {
         return repo.getPhotos()
     }
 }
