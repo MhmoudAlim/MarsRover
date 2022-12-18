@@ -6,7 +6,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import mahmoud.alim.marsrover.data.remote.api.RoversApi
 import mahmoud.alim.marsrover.data.remote.datasource.PhotosDataSrc
-import mahmoud.alim.marsrover.data.remote.datasource.PhotosDataSrcImpl
 import mahmoud.alim.marsrover.data.repo.RoversPhotosRepo
 import mahmoud.alim.marsrover.data.repo.RoversPhotosRepoImpl
 import okhttp3.OkHttpClient
@@ -52,7 +51,7 @@ object DataModule {
     @Provides
     @Singleton
     fun provideRemotePhotosDataRrc(api: RoversApi): PhotosDataSrc {
-        return PhotosDataSrcImpl(api)
+        return PhotosDataSrc(api)
     }
 
 
