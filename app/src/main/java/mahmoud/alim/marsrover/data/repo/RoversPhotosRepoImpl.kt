@@ -1,23 +1,26 @@
 package mahmoud.alim.marsrover.data.repo
 
-import mahmoud.alim.marsrover.data.remote.datasource.PhotosDataSrc
-import mahmoud.alim.marsrover.domain.mapper.toRoverPhoto
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.PagingData
+import kotlinx.coroutines.flow.Flow
+import mahmoud.alim.marsrover.data.remote.datasource.PhotosDataSrcImpl
 import mahmoud.alim.marsrover.domain.model.RoverPhoto
 
 /**
  * @author Mahmoud Alim on 16/12/2022.
  */
 class RoversPhotosRepoImpl(
-    private val remote: PhotosDataSrc
+    private val remote: PhotosDataSrcImpl
 ) : RoversPhotosRepo {
 
-    override suspend fun getPhotos(): Result<List<RoverPhoto>> {
-        return try {
-            val roversDto = remote.getAllPhotos()
-            Result.success(roversDto.photos.map { it.toRoverPhoto() })
-        } catch (e: Exception) {
-            e.printStackTrace()
-            Result.failure(e)
-        }
+    override fun getPhotos(): Flow<PagingData<RoverPhoto>> {
+        return Pager(
+            config = PagingConfig(
+                pageSize = 10,
+                enablePlaceholders = true
+            ),
+            pagingSourceFactory = { remote }
+        ).flow
     }
 }

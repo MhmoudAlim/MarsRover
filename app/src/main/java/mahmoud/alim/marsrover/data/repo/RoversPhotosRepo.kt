@@ -1,6 +1,8 @@
 package mahmoud.alim.marsrover.data.repo
 
 
+import androidx.paging.PagingData
+import kotlinx.coroutines.flow.Flow
 import mahmoud.alim.marsrover.domain.model.RoverPhoto
 
 /**
@@ -8,5 +10,5 @@ import mahmoud.alim.marsrover.domain.model.RoverPhoto
  */
 interface RoversPhotosRepo {
 
-    suspend fun getPhotos(): Result<List<RoverPhoto>>
+     fun getPhotos(): Flow<PagingData<RoverPhoto>>
 }
