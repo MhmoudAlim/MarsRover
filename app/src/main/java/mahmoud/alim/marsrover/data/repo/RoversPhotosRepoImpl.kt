@@ -4,14 +4,14 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import kotlinx.coroutines.flow.Flow
-import mahmoud.alim.marsrover.data.remote.datasource.PhotosDataSrcImpl
+import mahmoud.alim.marsrover.data.remote.datasource.PhotosDataSrc
 import mahmoud.alim.marsrover.domain.model.RoverPhoto
 
 /**
  * @author Mahmoud Alim on 16/12/2022.
  */
 class RoversPhotosRepoImpl(
-    private val remote: PhotosDataSrcImpl
+    private val remote: PhotosDataSrc
 ) : RoversPhotosRepo {
 
     override fun getPhotos(): Flow<PagingData<RoverPhoto>> {
