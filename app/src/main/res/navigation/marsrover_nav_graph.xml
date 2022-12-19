@@ -11,7 +11,7 @@
         android:label="photosFragment"
         tools:layout="@layout/fragment_photos">
         <action
-            android:id="@+id/action_converterFragment_to_detailsFragment"
+            android:id="@+id/action_photosFragment_to_detailsFragment"
             app:destination="@id/detailsFragment"
             app:enterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_right" />
@@ -21,5 +21,9 @@
         android:id="@+id/detailsFragment"
         android:name="mahmoud.alim.marsrover.presentation.ui.screens.details.PhotoDetailsFragment"
         android:label="DetailsFragment"
-        tools:layout="@layout/fragment_photo_details" />
+        tools:layout="@layout/fragment_photo_details">
+    <argument
+        android:name="photoDetails"
+        app:argType="mahmoud.alim.marsrover.presentation.ui.model.RoverPhotoDetails" />
+    </fragment>
 </navigation>
