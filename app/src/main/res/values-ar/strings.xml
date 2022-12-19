@@ -9,5 +9,6 @@
     <string name="rover">المسبار</string>
     <string name="launch_date">تاريخ الاطلاق</string>
     <string name="land_date">تاريخ الهبوط</string>
+    <string name="network_lost">Netowrk lost</string>
 
 </resources>

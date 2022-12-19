@@ -9,4 +9,6 @@
     <string name="rover">Rover</string>
     <string name="launch_date">Launch Date</string>
     <string name="land_date">Land date</string>
+    <string name="network_lost">Netowrk lost</string>
+    <string name="network_retrived">Network Retreived</string>
 </resources>
