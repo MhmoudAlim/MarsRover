@@ -4,7 +4,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import dagger.hilt.android.lifecycle.HiltViewModel
+import mahmoud.alim.marsrover.domain.mapper.toRoverPhotoDetails
+import mahmoud.alim.marsrover.domain.model.RoverPhoto
 import mahmoud.alim.marsrover.domain.usecase.GetAllRoverPhotos
+import mahmoud.alim.marsrover.presentation.ui.model.RoverPhotoDetails
 import javax.inject.Inject
 
 /**
@@ -18,4 +21,11 @@ class PhotosViewModel @Inject constructor(
 
     val photos
         get() = getAllRoverPhotos().cachedIn(viewModelScope)
+
+
+    fun getPhotoDetails(photo: RoverPhoto): RoverPhotoDetails {
+        with(photo) {
+            return this.toRoverPhotoDetails()
+        }
+    }
 }
