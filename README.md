@@ -100,7 +100,7 @@ Download App Apk : [Mars Rover](https://github.com/MhmoudAlim/MarsRover/blob/mas
 <br/>
 
 
-<img src="https://github.com/MhmoudAlim/MarsRover/blob/master/blob/app_arch.png?raw=true" alt="App Architecture" width="380"/>
+<img src="https://github.com/MhmoudAlim/MarsRover/blob/master/blob/app_arch.png?raw=true" alt="App Architecture" width="4000"/>
 
 
 <br/>
@@ -111,7 +111,7 @@ Download App Apk : [Mars Rover](https://github.com/MhmoudAlim/MarsRover/blob/mas
 ### Application data Flow
 <br/>
 
-<img src="https://github.com/MhmoudAlim/MarsRover/blob/master/blob/architecture.png?raw=true" alt="Data Flow" height="300"/>
+<img src="https://github.com/MhmoudAlim/MarsRover/blob/master/blob/architecture.png?raw=true" alt="Data Flow" height="280"/>
 
 <br/>
 
