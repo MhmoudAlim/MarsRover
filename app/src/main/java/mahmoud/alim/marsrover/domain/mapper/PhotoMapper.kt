@@ -13,7 +13,7 @@ fun Photo.toRoverPhoto(): RoverPhoto {
         id = id,
         imageSrc = imgSrc,
         earthDate = earthDate,
-        cameraName = camera.name,
+        cameraName = camera.fullName,
         roverId = rover.id,
         roverName = rover.name,
         roverLandingDate = rover.landingDate,
