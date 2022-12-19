@@ -3,10 +3,11 @@
     <string name="error_occured">ناسف ، حدث خطا ما.</string>
     <string name="retry">حاول مجددآ!</string>
     <string name="no_results_found">لا يوجد نتائج</string>
-    <string name="published_at">published_at</string>
     <string name="rover_item">Rover Photo Item</string>
-    <string name="camera">"Camera "</string>
-    <string name="name">Name</string>
-    <string name="rover">Rover</string>
+    <string name="camera">الكاميرا</string>
+    <string name="name">الاسم</string>
+    <string name="rover">المسبار</string>
+    <string name="launch_date">تاريخ الاطلاق</string>
+    <string name="land_date">تاريخ الهبوط</string>
 
 </resources>
