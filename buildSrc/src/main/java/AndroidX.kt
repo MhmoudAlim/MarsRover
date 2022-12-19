@@ -23,6 +23,7 @@ object AndroidX {
     private const val navVersion = "2.5.3"
     const val fragmentNavigation =  "androidx.navigation:navigation-fragment-ktx:$navVersion"
     const val uiNavigation =  "androidx.navigation:navigation-ui-ktx:$navVersion"
+    const val safeArgs =  "androidx.navigation:navigation-safe-args-gradle-plugin:$navVersion"
 
     private const val hiltNavVersion = "1.0.0"
     const val hiltNavigation =  "androidx.hilt:hilt-navigation-fragment:$hiltNavVersion"
