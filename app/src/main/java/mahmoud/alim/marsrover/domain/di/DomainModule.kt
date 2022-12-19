@@ -14,7 +14,7 @@ import mahmoud.alim.marsrover.domain.usecase.GetAllRoverPhotos
 
 @Module
 @InstallIn(ViewModelComponent::class)
-class DomainModule {
+object DomainModule {
 
     @Provides
     @ViewModelScoped
