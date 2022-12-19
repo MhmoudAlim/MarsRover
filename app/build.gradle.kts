@@ -23,7 +23,7 @@ android {
     }
 
     defaultConfig {
-        buildConfigField("String", "API_KEY", "\"DEMO_KEY\"")
+        buildConfigField("String", "API_KEY", "\"7rjXPhC0Gf6kxcZ7imVZ9V46TDUDGQ2YL8wMWoak\"")
     }
 
 
@@ -41,6 +41,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 }
 
