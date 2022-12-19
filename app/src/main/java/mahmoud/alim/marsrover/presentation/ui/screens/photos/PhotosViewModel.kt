@@ -19,8 +19,7 @@ class PhotosViewModel @Inject constructor(
     private val getAllRoverPhotos: GetAllRoverPhotos,
 ) : ViewModel() {
 
-    val photos
-        get() = getAllRoverPhotos().cachedIn(viewModelScope)
+    val photos = getAllRoverPhotos().cachedIn(viewModelScope)
 
 
     fun getPhotoDetails(photo: RoverPhoto): RoverPhotoDetails {
