@@ -11,4 +11,5 @@
     <string name="land_date">Land date</string>
     <string name="network_lost">Netowrk lost</string>
     <string name="network_retrived">Network Retreived</string>
+    <string name="network_not_available">Network is not Avialable</string>
 </resources>

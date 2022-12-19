@@ -31,6 +31,11 @@ class NetworkConnectivityObserver(
                     super.onLost(network)
                     launch { send(ConnectivityObserver.NetworkStatus.Lost) }
                 }
+
+                override fun onUnavailable() {
+                    super.onUnavailable()
+                    launch { send(ConnectivityObserver.NetworkStatus.NotAvailable) }
+                }
             }
             connectivityManager.registerDefaultNetworkCallback(callback)
             awaitClose {

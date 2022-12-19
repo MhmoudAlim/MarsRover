@@ -11,6 +11,7 @@ interface ConnectivityObserver {
 
     enum class NetworkStatus {
         Available,
+        NotAvailable,
         Idle,
         Lost;
     }

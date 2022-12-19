@@ -56,9 +56,10 @@ class PhotosFragment : Fragment(), RoverPhotosAdapter.OnItemClickListener {
                 .flowWithLifecycle(viewLifecycleOwner.lifecycle, Lifecycle.State.STARTED)
                 .collect {
                     when (it) {
-                        ConnectivityObserver.NetworkStatus.Available,
+                        ConnectivityObserver.NetworkStatus.Available -> announceNetworkStatus(R.string.network_retrived)
                         ConnectivityObserver.NetworkStatus.Idle -> Unit
-                        ConnectivityObserver.NetworkStatus.Lost -> announceNetworkStatus(R.string.network_retrived)
+                        ConnectivityObserver.NetworkStatus.Lost -> announceNetworkStatus(R.string.network_lost)
+                        ConnectivityObserver.NetworkStatus.NotAvailable -> announceNetworkStatus(R.string.network_not_available)
                     }
                 }
         }
